@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Armaan Sharma's Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d64f92a39a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class = "logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class = "header-text">
+                    <p>Student at Santa Clara University</p>
+                    <h1>Hi! I'm Armaan<br> Sharma from<br> Pinole, CA</h1>
+                </div>
+            </div>
+        </div>
+        <!------------------ABOUT----------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class = "about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am currently a computer science student at Santa Clara University with a minor in math.
+                            The subject interests be in various ways, but I mainly enjoy software development and
+                            Artificial Intelligence. I will graduate June 2026, and I am very excited to get into the
+                            work force. Other hobbies of mine include fitness, sports, and gaming. 
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Artificial Intelligence</span><br>Training AI models</li>
+                                    <li><span>Web Development</span><br>Web App Development</li>
+                                    <li><span>App Development</span><br>Building Android/iOS apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Jan 2025 - Present</span><br>Freelance Software Developer at Aplix Accounting</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2026</span><br>B.A. in Computer Science, minor in Mathematics - Santa Clara University</li>
+                                    <li><span>2022</span><br>High School Diploma - Miramonte High School</li>
+                                </ul>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------portfolio------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.webp">
+                        <div class="layer">
+                            <h3>Social Network App</h3>
+                            <p>This app allows you to add friends and view their posts. Implemented a privacy feature so
+                                users can choose who they want to view their profile/posts. Created using Qt and C++.
+                            </p>
+                            <a href="https://github.com/armaan1019/SocialNetwork"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.webp">
+                        <div class="layer">
+                            <h3>Bot Detection Model</h3>
+                            <p>Created an AI model to detect twitter bot accounts using data from twitter accounts. 
+                                Implemented this model with Python and its libraries known as numpy, matplotlib, and scikit-learn.
+                            </p>
+                            <a href="https://github.com/armaan1019/BotDetector"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.jpg">
+                        <div class="layer">
+                            <h3>Contact List App</h3>
+                            <p>Created a mobile app for people to store their contacts along with their location.
+                                Implemented this using Android Studio using the Java programming language.
+                            </p>
+                            <a href="https://github.com/armaan1019/ContactListApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/armaan1019" class="btn">See more</a>
+            </div>
+        </div>
+        <!------------------contact---------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>armaan192004@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>510-691-5584</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/armaan-sharma-a1237a296"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/resumecopy.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button> 
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="" async defer></script>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(event, tabname){
+                for(let tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(let tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycby4LQx-svO2E4GdRthg0604IgKD89i_tEbaw_IPU08b3wXa2YUZZob5A-MZdQaVQBLu_w/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message sent successfully!" 
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+        form.reset()})
+            .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    </body>
+</html>
