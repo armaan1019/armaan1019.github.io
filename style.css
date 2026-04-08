@@ -153,6 +153,11 @@ nav ul li a:hover::after{
     display: block;
 }
 
+ul.description li {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
 /*-------------Porfolio-----------*/
 #profolio{
     padding: 50px 0;
